@@ -1,0 +1,48 @@
+{
+  // Use o IntelliSense para saber mais sobre os atributos possíveis.
+  // Focalizar para exibir as descrições dos atributos existentes.
+  // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "name": "get_iniciando",
+    //   "cwd": "get_iniciando",
+    //   "request": "launch",
+    //   "type": "dart"
+    // },
+    // {
+    //   "name": "get_iniciando (profile mode)",
+    //   "cwd": "get_iniciando",
+    //   "request": "launch",
+    //   "type": "dart",
+    //   "flutterMode": "profile"
+    // },
+    // {
+    //   "name": "get_iniciando (release mode)",
+    //   "cwd": "get_iniciando",
+    //   "request": "launch",
+    //   "type": "dart",
+    //   "flutterMode": "release"
+    // },
+    {
+      "name": "get_rotas",
+      "cwd": "get_rotas",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "get_rotas (profile mode)",
+      "cwd": "get_rotas",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "get_rotas (release mode)",
+      "cwd": "get_rotas",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}
