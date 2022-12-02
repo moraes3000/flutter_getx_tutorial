@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get_rotas/navegacao_comum/back/back_home_page.dart';
 import 'package:get_rotas/navegacao_comum/off/off_home_page.dart';
 
+import 'await_params/await_params_home_page.dart';
 import 'off_all/off_all_home_page.dart';
 import 'send_params/send_params_home_page.dart';
 import 'to/to_home_page.dart';
@@ -49,6 +50,12 @@ class NavegacaoComumHomePage extends StatelessWidget {
                 Get.to(SendParamsHomePage());
               },
               child: const Text('Enviando parâmetros'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(AwaitParamsHomePage());
+              },
+              child: const Text('AwaitParamsHomePage'),
             ),
           ],
         ),
