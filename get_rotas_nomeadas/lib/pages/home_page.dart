@@ -19,7 +19,13 @@ class HomePage extends StatelessWidget {
               Get.toNamed("/inicial/page1");
             },
             child: const Text('Inicial'),
-          )
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.toNamed("/pagina_que_n_existe");
+            },
+            child: const Text('Página que não existe'),
+          ),
         ],
       )),
     );
