@@ -26,6 +26,12 @@ class HomePage extends StatelessWidget {
             },
             child: const Text('Página que não existe'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Get.toNamed("/envio_parametros_home_page");
+            },
+            child: const Text('Envio de parametros'),
+          ),
         ],
       )),
     );
