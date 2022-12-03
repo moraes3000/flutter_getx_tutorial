@@ -24,22 +24,42 @@
     //   "type": "dart",
     //   "flutterMode": "release"
     // },
+    // {
+    //   "name": "get_rotas",
+    //   "cwd": "get_rotas",
+    //   "request": "launch",
+    //   "type": "dart"
+    // },
+    // {
+    //   "name": "get_rotas (profile mode)",
+    //   "cwd": "get_rotas",
+    //   "request": "launch",
+    //   "type": "dart",
+    //   "flutterMode": "profile"
+    // },
+    // {
+    //   "name": "get_rotas (release mode)",
+    //   "cwd": "get_rotas",
+    //   "request": "launch",
+    //   "type": "dart",
+    //   "flutterMode": "release"
+    // },
     {
-      "name": "get_rotas",
-      "cwd": "get_rotas",
+      "name": "get_rotas_nomeadas",
+      "cwd": "get_rotas_nomeadas",
       "request": "launch",
       "type": "dart"
     },
     {
-      "name": "get_rotas (profile mode)",
-      "cwd": "get_rotas",
+      "name": "get_rotas_nomeadas (profile mode)",
+      "cwd": "get_rotas_nomeadas",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
     },
     {
-      "name": "get_rotas (release mode)",
-      "cwd": "get_rotas",
+      "name": "get_rotas_nomeadas (release mode)",
+      "cwd": "get_rotas_nomeadas",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"
