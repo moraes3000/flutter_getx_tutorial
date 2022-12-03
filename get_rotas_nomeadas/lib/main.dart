@@ -27,6 +27,10 @@ class MyApp extends StatelessWidget {
         page: () => const RotaNaoEncontradaPage(),
       ),
       initialRoute: '/home',
+      routingCallback: (Routing? routing) {
+        debugPrint(routing?.previous);
+        debugPrint(routing?.current);
+      },
       getPages: [
         GetPage(
           name: '/home',
