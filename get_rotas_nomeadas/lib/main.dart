@@ -9,6 +9,7 @@ import 'pages/envio_parametros/path_param_page.dart';
 import 'pages/envio_parametros/query_param_page.dart';
 import 'pages/inicial/page1.dart';
 import 'pages/middleware/middleware_home_page.dart';
+import 'pages/nested_navigation/home_nested_navigation.dart';
 import 'pages/rota_nao_encontrada/rota_nao_encontrada_page.dart';
 
 void main() {
@@ -59,6 +60,10 @@ class MyApp extends StatelessWidget {
             middlewares: [
               RouteMiddleware(),
             ]),
+        GetPage(
+          name: '/nestNavigation',
+          page: () => HomeNestedNavigation(),
+        )
       ],
     );
   }
