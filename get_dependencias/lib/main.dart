@@ -6,6 +6,7 @@ import 'package:get_dependencias/pages/metodos/metodos_home_page.dart';
 
 import 'pages/metodos/lazy_put_page/lazy_put_page.dart';
 import 'pages/metodos/put/put_page.dart';
+import 'pages/metodos/putAsync/putAsync_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
             children: [
               GetPage(name: '/put', page: () => const PutPage()),
               GetPage(name: '/lazyPut', page: () => LazyPutPage()),
+              GetPage(name: '/PutAsyncPage', page: () => PutAsyncPage()),
             ]),
       ],
     );
