@@ -4,6 +4,7 @@ import 'package:get_dependencias/pages/basico/basico_home_page.dart';
 import 'package:get_dependencias/pages/home_page.dart';
 import 'package:get_dependencias/pages/metodos/metodos_home_page.dart';
 
+import 'pages/metodos/create/create_home_page.dart';
 import 'pages/metodos/lazy_put_page/lazy_put_page.dart';
 import 'pages/metodos/put/put_page.dart';
 import 'pages/metodos/putAsync/putAsync_page.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
               GetPage(name: '/put', page: () => const PutPage()),
               GetPage(name: '/lazyPut', page: () => LazyPutPage()),
               GetPage(name: '/PutAsyncPage', page: () => PutAsyncPage()),
+              GetPage(name: '/CreateHomePage', page: () => CreateHomePage()),
             ]),
       ],
     );

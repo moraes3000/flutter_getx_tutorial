@@ -4,3 +4,4 @@
 
 - Put - criado quando incia a tela
 - LazyPut  -  criado apenas quando é necessário ser chamado(apos o click em algum link)
+- create - atualiza a instancia criada(chama ela novamente)
