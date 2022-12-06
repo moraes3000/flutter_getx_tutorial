@@ -18,7 +18,13 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).pushNamed('/basico');
               },
               child: const Text('Básico'),
-            )
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/metodos');
+              },
+              child: const Text('Métodos'),
+            ),
           ],
         ),
       ),
