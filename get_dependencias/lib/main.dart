@@ -4,6 +4,9 @@ import 'package:get_dependencias/pages/basico/basico_home_page.dart';
 import 'package:get_dependencias/pages/home_page.dart';
 import 'package:get_dependencias/pages/metodos/metodos_home_page.dart';
 
+import 'pages/binding/binding_controller.dart';
+import 'pages/binding/binding_exemplo.dart';
+import 'pages/binding/home_bindings.dart';
 import 'pages/metodos/create/create_home_page.dart';
 import 'pages/metodos/delete_update/delete_page.dart';
 import 'pages/metodos/delete_update/update_home.dart';
@@ -34,6 +37,22 @@ class MyApp extends StatelessWidget {
               GetPage(name: '/UpdateHome', page: () => UpdateHome()),
               GetPage(name: '/DeletePage', page: () => DeletePage()),
             ]),
+        GetPage(
+            name: '/HomeBindings',
+            page: () => HomeBindings(),
+            binding: BindingExemplo()),
+        GetPage(
+            name: '/BindingsBuilder',
+            page: () => HomeBindings(),
+            binding: BindingsBuilder(() {
+              Get.put(
+                  BindingController(nome: 'Inicializado dentro do binding'));
+            })),
+        GetPage(
+            name: '/BindingsBuilderPut',
+            page: () => HomeBindings(),
+            binding: BindingsBuilder.put(() =>
+                BindingController(nome: 'Inicializado dentro do binding'))),
       ],
     );
   }
