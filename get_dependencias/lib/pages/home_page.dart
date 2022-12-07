@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get_dependencias/pages/binding/home_bindings.dart';
 
 import 'binding/binding_controller.dart';
+import 'initialBinding/initial_binding_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -50,12 +51,18 @@ class HomePage extends StatelessWidget {
             TextButton(
               onPressed: () {
                 Get.to(
-                  HomeBindings(),
+                  const HomeBindings(),
                   binding: BindingsBuilder.put(() => BindingController(
                       nome: 'Inicializado pelo binding sem rota')),
                 );
               },
               child: const Text('Bindings sem rota nomeada'),
+            ),
+            TextButton(
+              onPressed: () {
+                Get.to(const InitialBindingPage());
+              },
+              child: const Text('InitialBindingPage'),
             ),
           ],
         ),

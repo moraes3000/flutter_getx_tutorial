@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_dependencias/pages/basico/basico_home_page.dart';
 import 'package:get_dependencias/pages/home_page.dart';
+import 'package:get_dependencias/pages/initialBinding/initial_binding.dart';
 import 'package:get_dependencias/pages/metodos/metodos_home_page.dart';
 
 import 'pages/binding/binding_controller.dart';
 import 'pages/binding/binding_exemplo.dart';
 import 'pages/binding/home_bindings.dart';
+import 'pages/initialBinding/initial_binding_page.dart';
 import 'pages/metodos/create/create_home_page.dart';
 import 'pages/metodos/delete_update/delete_page.dart';
 import 'pages/metodos/delete_update/update_home.dart';
@@ -23,6 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      initialBinding: InitialBinding(),
       getPages: [
         GetPage(name: '/', page: () => const HomePage()),
         GetPage(name: '/basico', page: () => BasicoHomePage()),
@@ -53,6 +56,7 @@ class MyApp extends StatelessWidget {
             page: () => HomeBindings(),
             binding: BindingsBuilder.put(() =>
                 BindingController(nome: 'Inicializado dentro do binding'))),
+        GetPage(name: '/InitialBindingPage', page: () => InitialBindingPage()),
       ],
     );
   }
